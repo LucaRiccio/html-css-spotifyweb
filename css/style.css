@@ -14,13 +14,21 @@
 .navigation {
   display: flex;
   justify-content: center;
-  height: 80px;
-  width: 100vw;
   flex-wrap: wrap;
-  background-color: inherit;
+  height: 80px;
+  /* width: 100vw; */
+  background-color: orange;
   height: 80px;
   width: 100%;
   text-transform: uppercase;
+  align-items: center;
+  border: 1px solid black;
+  position: fixed;
+
+}
+
+.special {
+  margin-top: 80px;
 }
 
 .navigation a {
