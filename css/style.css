@@ -1,1 +1,47 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+.container-flex {
+  display: flex;
+  /* border: 1px solid black; */
+  flex-wrap: wrap;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  width: 100vw;
+  flex-wrap: wrap;
+  background-color: blue;
+  height: 80px;
+  width: 100%;
+}
+
+.aside {
+  background-image: linear-gradient(#191700, #1c1a01);
+  color: white;
+  height: 500px;
+  width: 15%;
+  padding-left: 10px;
+}
+
+.aside img {
+  width: 100%;
+}
+
+.contenuto {
+  background-color: orange;
+  height: 500px;
+  width: 85%;
+}
+
+.player {
+  background-color: gray;
+  height: 80px;
+  width: 100vw;
+
+}
