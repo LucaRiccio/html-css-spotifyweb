@@ -8,6 +8,7 @@
   display: flex;
   /* border: 1px solid black; */
   flex-wrap: wrap;
+  color: white;
 }
 
 .navigation {
@@ -16,15 +17,20 @@
   height: 80px;
   width: 100vw;
   flex-wrap: wrap;
-  background-color: blue;
+  background-color: inherit;
   height: 80px;
   width: 100%;
+  text-transform: uppercase;
+}
+
+.navigation a {
+  margin-right: 30px;
 }
 
 .aside {
   background-image: linear-gradient(#191700, #1c1a01);
   color: white;
-  height: 500px;
+  /* height: 500px; */
   width: 15%;
   padding-left: 10px;
 }
@@ -34,9 +40,28 @@
 }
 
 .contenuto {
-  background-color: orange;
-  height: 500px;
+  background-image: linear-gradient(to bottom right, #8d8003, #141200);
+  /* height: 500px; */
   width: 85%;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+}
+
+.card {
+  margin-top: 30px;
+  margin-right: 15px;
+
+}
+
+.card img {
+  height: 130px;
+  width: 130px;
+
 }
 
 .player {
