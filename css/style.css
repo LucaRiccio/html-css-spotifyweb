@@ -1,4 +1,5 @@
 *{
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -33,6 +34,7 @@
 
 .navigation a {
   margin-right: 30px;
+  text-decoration: none;
 }
 
 .aside {
@@ -76,5 +78,8 @@
   background-color: gray;
   height: 80px;
   width: 100vw;
+  position: fixed;
+  left: 0;
+  bottom: 0;
 
 }
