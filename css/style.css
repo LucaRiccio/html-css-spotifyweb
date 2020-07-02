@@ -39,14 +39,13 @@ a:hover {
   padding-right: 190px;
 }
 
+#hamburger {
+  display: none;
+}
+
 .navigation a {
   margin-right: 30px;
 }
-
-/* .navigation a:active {
-  border-bottom: 2px solid;
-} */
-
 
 .wrapper {
   margin-top: 80px;
@@ -54,11 +53,6 @@ a:hover {
   padding-top: 50px;
   padding-left: 50px;
 }
-
-.special-row {
-
-}
-
 
 .aside {
   font-size: 15px;
@@ -79,12 +73,8 @@ a:hover {
   margin-bottom: 10px;
 }
 
-.tr {
+.margin-down {
   margin-bottom: 10px;
-}
-
-.aside-top {
-
 }
 
 .top-up i {
@@ -92,8 +82,8 @@ a:hover {
   padding-top: 10px;
 }
 
-.aside-bottom {
-
+.top-up {
+  margin: 20px 0px;
 }
 
 #user {
@@ -101,12 +91,6 @@ a:hover {
   vertical-align:sub;
   margin-bottom: 20px;
 }
-
-.top-up {
-  margin: 20px 0px;
-}
-
-
 
 #logo-large {
   width: 110px;
@@ -146,9 +130,8 @@ a:hover {
 }
 
 .card img {
-  height: 130px;
-  width: 130px;
-  /* border-radius: 50%; */
+  height: 160px;
+  width: 160px;
 }
 
 .player {
@@ -161,8 +144,6 @@ a:hover {
   bottom: 0;
   justify-content: space-between;
 }
-
-
 
 .left  {
   display: flex;
@@ -178,6 +159,11 @@ a:hover {
   margin-right: 10px;
 }
 
+#titolo {
+  font-size: 13px;
+  font-weight: bold;
+}
+
 .fa-heart {
   margin-left: 10px;
 }
@@ -185,6 +171,7 @@ a:hover {
 .center {
   text-align: center;
   flex-shrink: 3;
+  padding-top: 7px;
 }
 
 .right {
@@ -196,10 +183,14 @@ a:hover {
 
 .right i {
   margin-right: 15px;
-
 }
 
-#x {
+.right i:hover {
+  margin-right: 15px;
+  color: white;
+}
+
+#scorrimento {
   width: 450px;
   height: 3px;
   margin-left: 15px;
@@ -208,7 +199,7 @@ a:hover {
   border-radius: 3px;
 }
 
-#y {
+#volume {
   width: 60px;
   height: 3px;
   background-color: darkgrey;
@@ -218,12 +209,15 @@ a:hover {
 
 .simboli {
   margin-top: 10px;
-  /* text-align: center; */
 }
 
 .simboli i {
   margin-right: 15px;
   margin-left: 15px;
+}
+
+.simboli i:hover {
+  color: white;
 }
 
 .fa-pause-circle {
@@ -235,11 +229,11 @@ a:hover {
   align-items: center;
 }
 
-.testo {
-
+.contatore {
+  font-size: 12px;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:768px) {
 
   .navigation {
     display: flex;
@@ -282,13 +276,13 @@ a:hover {
 
   .player {
     display: flex;
-    background-color: #282828;
+    background-color: black;
     color: darkgrey;
     height: 80px;
     width: 100%;
     position: fixed;
     bottom: 0;
-    justify-content: space-around;
+    justify-content: flex-start;
   }
 
   #logo-large {
@@ -327,11 +321,77 @@ a:hover {
 
   .fa-user {
     font-size: 25px;
-    margin-left: 3px;
+    margin-left: 5px;
     margin-bottom: 10px;
   }
 
+  .center {
+    text-align: center;
+    flex-shrink: 3;
+    padding-top: 7px;
+    margin: 0 auto;
+  }
 
+  .simboli {
+    margin-top: 10px;
+    /* text-align: center; */
+  }
 
+  .simboli i {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  .fa-pause-circle {
+    font-size: 22px;
+  }
+
+  .barra {
+    display: flex;
+    align-items: center;
+  }
+
+  #scorrimento {
+    width: 300px;
+    height: 3px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: darkgrey;
+    border-radius: 3px;
+  }
+
+}
+
+@media screen and (max-width:480px) {
+
+  .navigation a {
+    /* margin-right: 30px; */
+    font-size: 12px;
+    justify-content: flex-start;
+  }
+
+  #scorrimento {
+    width: 200px;
+    height: 3px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: darkgrey;
+    border-radius: 3px;
+  }
+
+  .simboli i {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .invisible-xs {
+    display: none;
+  }
+
+  #hamburger {
+    display: inline-block;
+    margin-bottom: 11px;
+    margin-left: 10px;
+  }
 
 }
