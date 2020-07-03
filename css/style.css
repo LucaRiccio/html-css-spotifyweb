@@ -37,6 +37,7 @@ a:hover {
   position: fixed;
   color: white;
   padding-right: 190px;
+  z-index: 1;
 }
 
 #hamburger {
@@ -119,10 +120,33 @@ a:hover {
 .card {
   margin-top: 30px;
   margin-right: 15px;
+  position: relative;
+}
+
+.overlay {
+  display: none;
+}
+
+.overlay span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+}
+
+.card:hover .overlay {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 98%;
+  background-color: rgb(61,61,61);
+  background-color: rgba(61,61,61,0.5);
 }
 
 .testo-card {
   text-align: center;
+  width: 160px;
 }
 
 .strong {
@@ -393,5 +417,5 @@ a:hover {
     margin-bottom: 11px;
     margin-left: 10px;
   }
-
+  
 }
